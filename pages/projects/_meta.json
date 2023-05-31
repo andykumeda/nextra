@@ -1,0 +1,11 @@
+{
+  "jekyll": "Jekyll",
+  "nuxt": "Nuxt",
+  "nextjs": {
+    "title": "Next.js"
+  },
+  "notion": "Notion",
+  "resume": {
+    "title": "JSON Resume"
+  }
+}
