@@ -1,9 +1,9 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-
+import { useRouter } from 'next/router';
+import { useState, useEffect } from "react";
 
 const config: DocsThemeConfig = {
-  gitTimestamp: '', 
   logo: (
     <>
       <svg width="24" height="24" viewBox="0 0 24 24">
@@ -47,8 +47,7 @@ const config: DocsThemeConfig = {
       }
     }
   },
-  darkMode: true,
-    sidebar: {
+  sidebar: {
     defaultMenuCollapseLevel: 2,
     toggleButton: true
   },
@@ -60,7 +59,36 @@ const config: DocsThemeConfig = {
     next: false
   },
   toc: {
+    float: false,
     title: ''
+  },
+  primaryHue: 169,
+    gitTimestamp({ timestamp }) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [dateString, setDateString] = useState(timestamp.toISOString());
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+      try {
+        setDateString(
+          timestamp.toLocaleDateString(navigator.language, {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })
+        );
+      } catch (e) {
+        // Ignore errors here; they get the ISO string.
+        // At least one person out there has manually misconfigured navigator.language.
+      }
+    }, [timestamp]);
+
+    return <>Last updated on {dateString}</>;
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s | AndyK\'s Projects',
+    }
   }
 }
 
