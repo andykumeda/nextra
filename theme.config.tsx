@@ -19,9 +19,15 @@ const config: DocsThemeConfig = {
   ),
 
   project: {
-    link: 'https://github.com/andykumeda/nextra-docs',
+    link: 'https://github.com/andykumeda/nextra',
   },
-  docsRepositoryBase: 'https://github.com/andykumeda/nextra-docs',
+  docsRepositoryBase: 'https://github.com/andykumeda/nextra',
+  editLink: {
+    text: '',
+  }, 
+  feedback: {
+    content: '',
+  },
   footer: {
     text: (
       <span>
@@ -47,11 +53,14 @@ const config: DocsThemeConfig = {
     toggleButton: true
   },
   nextThemes: {
-    defaultTheme: 'dark'
+    defaultTheme: 'system'
   },
   navigation: {
     prev: false,
     next: false
+  },
+  toc: {
+    title: ''
   }
 }
 
