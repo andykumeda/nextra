@@ -63,28 +63,30 @@ const config: DocsThemeConfig = {
     title: ''
   },
   primaryHue: 169,
-    gitTimestamp({ timestamp }) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [dateString, setDateString] = useState(timestamp.toISOString());
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useEffect(() => {
-      try {
-        setDateString(
-          timestamp.toLocaleDateString(navigator.language, {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })
-        );
-      } catch (e) {
-        // Ignore errors here; they get the ISO string.
-        // At least one person out there has manually misconfigured navigator.language.
-      }
-    }, [timestamp]);
+  gitTimestamp({ timestamp }) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [dateString, setDateString] = useState(timestamp.toISOString());
 
-    return <>Last updated on {dateString}</>;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    try {
+      setDateString(
+        timestamp.toLocaleDateString(navigator.language, {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        })
+      );
+    } catch (e) {
+      // Ignore errors here; they get the ISO string.
+      // At least one person out there has manually misconfigured navigator.language.
+    }
+  }, [timestamp]);
+
+  return <>Last updated on {dateString}</>;
   },
+
   useNextSeoProps() {
     return {
       titleTemplate: '%s | AndyK\'s Projects',
