@@ -7,5 +7,7 @@
   "notion": "Notion",
   "resume": {
     "title": "JSON Resume"
-  }
+  },
+  "documentation": "Documentation",
+  "web2": "Legacy"
 }
