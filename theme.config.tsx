@@ -64,28 +64,25 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 169,
 
-  gitTimestamp({ timestamp }) {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [dateString, setDateString] = useState(timestamp.toISOString());
+  gitTimestamp: '',
+  //gitTimestamp({ timestamp }) {
+  //const [dateString, setDateString] = useState(timestamp.toISOString());
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  useEffect(() => {
-    try {
-      setDateString(
-        timestamp.toLocaleDateString(navigator.language, {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })
-      );
-    } catch (e) {
-      // Ignore errors here; they get the ISO string.
-      // At least one person out there has manually misconfigured navigator.language.
-    }
-  }, [timestamp]);
+  //useEffect(() => {
+   // try {
+    //  setDateString(
+     //   timestamp.toLocaleDateString(navigator.language, {
+      //    day: "numeric",
+       //   month: "long",
+        //  year: "numeric",
+       // })
+     // );
+   // } catch (e) {
+    //}
+  //}, [timestamp]);
 
-  return <>Last updated on {dateString}</>;
-  },
+  //return <>Last updated on {dateString}</>;
+  //},
 
   useNextSeoProps() {
     return {
