@@ -478,15 +478,15 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: false
 
-  /acorn-jsx@5.3.2(acorn@8.8.2):
+  /acorn-jsx@5.3.2(acorn@8.9.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.8.2
+      acorn: 8.9.0
 
-  /acorn@8.8.2:
-    resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
+  /acorn@8.9.0:
+    resolution: {integrity: sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -615,8 +615,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  /caniuse-lite@1.0.30001499:
-    resolution: {integrity: sha512-IhoQqRrW6WiecFcfZgoJS1YLEN1/HR1vHP5WNgjCARRW7KUNToHHTX3FrwCM+y4zkRa48D9rE90WFYc2IWhDWQ==}
+  /caniuse-lite@1.0.30001506:
+    resolution: {integrity: sha512-6XNEcpygZMCKaufIcgpQNZNf00GEqc7VQON+9Rd0K1bMYo8xhMZRAo5zpbnbMNizi4YNgIDAFrdykWsvY3H4Hw==}
     dev: false
 
   /ccount@2.0.1:
@@ -1282,8 +1282,8 @@ packages:
     resolution: {integrity: sha512-7OASN1Wma5fum5SrNhFMAMJxOUAbhyfQ8dQ//PJaJbNw0URTPWqIghHWt1MmAANKhHZIYOHruW4Kw4ruUWOdGw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn: 8.9.0
+      acorn-jsx: 5.3.2(acorn@8.9.0)
       eslint-visitor-keys: 3.4.1
 
   /esprima@4.0.1:
@@ -2446,8 +2446,8 @@ packages:
   /micromark-extension-mdxjs@1.0.1:
     resolution: {integrity: sha512-7YA7hF6i5eKOfFUzZ+0z6avRG52GpWR8DL+kN47y3f2KhxbBZMhmxe7auOeaTBrW2DenbbZTf1ea9tA2hDpC2Q==}
     dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn: 8.9.0
+      acorn-jsx: 5.3.2(acorn@8.9.0)
       micromark-extension-mdx-expression: 1.0.8
       micromark-extension-mdx-jsx: 1.0.5
       micromark-extension-mdx-md: 1.0.1
@@ -2675,8 +2675,8 @@ packages:
       - supports-color
     dev: false
 
-  /next-seo@6.0.0(next@13.4.4)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-jKKt1p1z4otMA28AyeoAONixVjdYmgFCWwpEFtu+DwRHQDllVX3RjtyXbuCQiUZEfQ9rFPBpAI90vDeLZlMBdg==}
+  /next-seo@6.1.0(next@13.4.4)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-iMBpFoJsR5zWhguHJvsoBDxDSmdYTHtnVPB1ij+CD0NReQCP78ZxxbdL9qkKIf4oEuZEqZkrjAQLB0bkII7RYA==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
@@ -2720,7 +2720,7 @@ packages:
       '@next/env': 13.4.4
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001499
+      caniuse-lite: 1.0.30001506
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2758,7 +2758,7 @@ packages:
       intersection-observer: 0.12.2
       match-sorter: 6.3.1
       next: 13.4.4(react-dom@18.2.0)(react@18.2.0)
-      next-seo: 6.0.0(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
+      next-seo: 6.1.0(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
       next-themes: 0.2.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
       nextra: 2.7.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
